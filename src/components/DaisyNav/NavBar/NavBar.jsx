@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Link from "../Link/Link";
 // import { FaBeer } from 'react-icons/fa';
-import { TiThMenuOutline } from "react-icons/ti";
+import { TiThMenuOutline, } from "react-icons/ti";
+import { AiOutlineClose } from "react-icons/ai";
+
 
 const NavBar = () => {
+    const[open,setOpen] = useState(false)
 
 
     const routes = [
@@ -16,12 +20,15 @@ const NavBar = () => {
       
       
     return (
-        <nav>
+        <nav className="text-black bg-yellow-300 ">
             {/* <FaBeer></FaBeer> */}
-            <TiThMenuOutline className="text-xl">
-
-            </TiThMenuOutline>
-            <ul className="md:flex">
+            <div className="md:hidden" onClick={() =>setOpen(!open)}>
+                {
+                    open == true? <AiOutlineClose></AiOutlineClose>: <TiThMenuOutline></TiThMenuOutline>
+                }
+             {/* <TiThMenuOutline className="text-xl md:hidden"></TiThMenuOutline> */}
+            </div>
+            <ul className="md:flex absolute bg-yellow-300 ">
             {
                 routes.map(route =><Link key={route.id} route={route}></Link> )
             }
