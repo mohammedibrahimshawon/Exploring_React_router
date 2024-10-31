@@ -20,7 +20,7 @@ const NavBar = () => {
       
       
     return (
-        <nav className="text-black bg-yellow-300 ">
+        <nav className="text-black p-6 bg-yellow-300 ">
             {/* <FaBeer></FaBeer> */}
             <div className="md:hidden" onClick={() =>setOpen(!open)}>
                 {
@@ -28,7 +28,11 @@ const NavBar = () => {
                 }
              {/* <TiThMenuOutline className="text-xl md:hidden"></TiThMenuOutline> */}
             </div>
-            <ul className="md:flex absolute bg-yellow-300 ">
+            <ul className={`md:flex duration-1000  absolute md:static
+                 ${open ? 'top-12': '-top-60'}
+                
+
+                 bg-yellow-300 px-6 shadow-lg`}>
             {
                 routes.map(route =><Link key={route.id} route={route}></Link> )
             }

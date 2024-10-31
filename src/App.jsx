@@ -13,9 +13,9 @@ function App() {
       <NavBar>
         
       </NavBar>
-      <DaisyNav>
+      {/* <DaisyNav>
         
-      </DaisyNav>
+      </DaisyNav> */}
       <h1 className='text-7xl bg-rose-500'>Vite + React</h1>
       <div
   className="hero min-h-screen"
