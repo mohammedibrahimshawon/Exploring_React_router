@@ -3,6 +3,7 @@
 import './App.css'
 import DaisyNav from './components/DaisyNav/DaisyNav';
 import NavBar from './components/DaisyNav/Navbar/Navbar';
+import PriceOptions from './components/PriceOptions/PriceOptions';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       {/* <DaisyNav>
         
       </DaisyNav> */}
+      <PriceOptions>
+
+      </PriceOptions>
       <h1 className='text-7xl bg-rose-500'>Vite + React</h1>
       <div
   className="hero min-h-screen"
