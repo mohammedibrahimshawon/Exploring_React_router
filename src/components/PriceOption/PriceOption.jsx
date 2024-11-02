@@ -9,14 +9,18 @@ const PriceOption = ({option}) => {
                 <span className="test-3xl">Taka </span>
             </h2>
             <h4 className="text-3xl text-center my-8">{name}</h4>
-            
+            {/* {
+                features.map((feature,index) => <Feature key={index} feature={feature}></Feature> )
+            } */}
+             
             
         </div>
     );
 };
 
-PriceOption.protoTypes= {
+PriceOption.propTypes = {
     option: PropTypes.object
 }
+
 
 export default PriceOption;

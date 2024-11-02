@@ -17,9 +17,9 @@ function App() {
       {/* <DaisyNav>
         
       </DaisyNav> */}
-      <PriceOptions>
+        <PriceOptions>
 
-      </PriceOptions>
+        </PriceOptions>
       <h1 className='text-7xl bg-rose-500'>Vite + React</h1>
       <div
   className="hero min-h-screen"
